@@ -1,0 +1,51 @@
+/* Ensure the iframe container is centered and takes up half the width and height */
+.game-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  padding: 20px;
+}
+
+.iframe-container {
+  position: relative;
+  width: 50vw; /* 50% of the viewport width */
+  height: 50vh; /* 50% of the viewport height */
+  max-width: 1200px; /* Optional: Set a maximum width for large screens */
+  background-color: #222;
+  border-radius: 10px;
+}
+
+.game-iframe {
+  width: 100%; /* Take up full width of the container */
+  height: 100%; /* Take up full height of the container */
+  border-radius: 10px;
+}
+
+/* Fullscreen button styling */
+.fullscreen-icon {
+  margin-top: 20px;
+  width: 50px; /* Adjust fullscreen button size */
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.fullscreen-icon:hover {
+  transform: scale(1.1);
+}
+
+/* Optional: Media Queries for responsiveness */
+@media (max-width: 768px) {
+  .game-container {
+    padding: 10px;
+  }
+
+  .iframe-container {
+    height: 60vh; /* Increase height slightly on smaller screens */
+  }
+
+  .fullscreen-icon {
+    width: 40px; /* Adjust fullscreen icon size on smaller screens */
+  }
+}

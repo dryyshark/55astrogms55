@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slope Game</title>
+    <link rel="stylesheet" href="../styles.css"> <!-- Link to your main styles -->
+    <link rel="stylesheet" href="slope.css"> <!-- Specific styles for this page -->
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-left">
+            <a href="../index.html">
+                <img src="../images/astrologo.png" alt="Astro Logo" class="logo">
+            </a>
+            <h1>ASTRO</h1>
+        </div>
+        <div class="navbar-right">
+            <a href="../games.html" class="nav-button">
+                <img src="../images/gamelogoA.png" alt="Games" class="nav-icon">
+            </a>
+            <a href="../extras.html" class="nav-button">
+                <img src="../images/extraslogo.png" alt="Extras" class="nav-icon">
+            </a>
+        </div>
+    </nav>
+
+    <section class="game-page">
+        <!-- Removed the "Slope Game" heading -->
+        <div class="game-container">
+            <div class="iframe-container">
+                <!-- Embed the Slope game using iframe and make it take half the page -->
+                <iframe src="https://brunysixlwork.site/storage/load/slope2/" class="game-iframe" frameborder="0" allowfullscreen></iframe>
+                
+                <!-- Fullscreen Button (image button) -->
+                <a href="#" id="fullscreenBtn">
+                    <img src="../images/fullscreen-icon.png" alt="Fullscreen" class="fullscreen-icon">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Back to <a href="../games.html">Games</a></p>
+    </footer>
+
+    <script src="slope.js"></script> <!-- JavaScript for fullscreen functionality -->
+</body>
+</html>
